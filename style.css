@@ -1,0 +1,403 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: 0;
+	font-family: 'Abel', sans-serif;
+
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+}
+
+nav h1{
+
+	font-weight: 800;
+	margin-top: 10px;
+	margin-left: 70px;
+	font-size: 50px;
+	color: 	#414a4c;
+
+
+}
+
+.scroll-button{
+	background: none;
+	border: none;
+	border-bottom:
+	display: block;
+	font-size: 25px;
+	padding: 5px 6px;
+	color: #888888;
+	border-bottom: 1.5px solid #787878;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+	margin: 0px 5px;
+	outline: none;
+}
+
+.scroll-button:hover{
+	font-size: 25.5px;
+	color: #666666;
+	border-bottom: 1.5px solid #676767;
+	font-weight: bolder;
+
+}
+nav{
+	height: 80px;
+	padding: 5px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	background: white;
+	z-index: 3;
+
+}
+
+.menu ul{
+	display: flex;
+	justify-content: between;
+	align-items: center;
+
+}
+
+.menu ul li{
+	list-style: none;
+	padding: 0px 20px;
+
+}
+
+.world{
+	height: 670px;
+	display: flex;
+
+
+}
+.menu ul li a{
+	text-decoration: none;
+	padding: 8px 0px;
+	font-size: 22px;
+	color: #888888;
+	border-bottom: 2px solid #787878;
+}
+
+.image{
+	position: relative;
+	margin-top: 40px;
+	margin-left: 20px;
+	height: 100%;
+	flex-basis: 45%;
+	/*overflow: hidden;*/
+	z-index: 1;
+}
+.image img:nth-child(1){
+	height: 350px;
+	position: absolute;
+	margin-left: 150px;
+	transform-origin: center;
+	animation: rotateclockwise 5s linear infinite;
+
+
+}
+.image img:nth-child(2){
+	height: 250px;
+	position: absolute;
+	margin-top: 360px;
+	margin-left: 180px;
+	transform-origin: center;
+	animation: rotateclockwise 5s linear infinite;
+}
+.image img:nth-child(3){
+	height: 200px;
+	position: absolute;
+	margin-top: 270px;
+	margin-left: 430px;
+	transform-origin: center;
+	animation: rotateanticlockwise 5s linear infinite;
+}
+
+@keyframes rotateclockwise{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+@keyframes rotateanticlockwise{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(-360deg);}
+}
+
+.maincontent{
+	height: 100%;
+	flex-basis: 55%;
+	padding: 0px 50px;
+	margin-top: -250px;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	align-content: center;
+
+}
+
+.content
+{
+	height: 100%;
+	flex-basis: 55%;
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.maincontent h2{
+	font-size: 30px;
+	color: #707070;
+	letter-spacing: 1px;
+}
+
+.conf-cases h2:nth-child(3)
+{
+	margin-top: -5px;
+}
+
+
+
+.cases-number
+{
+	margin-left: -4px !important;
+	font-size: 60px !important;
+	color: #398ad7 !important;
+}
+
+.cases-div{
+	padding: 20px 20px;
+	width: 250px;
+
+}
+
+#conf
+{
+	color: #398ad7 ;
+}
+#dead
+{
+	color: #ff5252 !important ;
+}
+#reco
+{
+	color: 	#33db98 !important ;
+}
+#active
+{
+	color: 	#dab600 !important ;
+}
+.world-heading
+{
+	font-size: 45px;
+	letter-spacing: 1.5px;
+	margin-left: 130px;
+
+}
+
+
+/* This is the styling for the India stats section*/
+
+.india{
+
+	/* width: 100%; */
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.india-heading{
+	margin-top: 60px;
+	font-size: 50px;
+}
+.india-contents{
+	margin-top: 10px;
+	width: 1100px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.india .cases-div h2{
+		color: #707070;
+		font-size: 30px;
+
+}
+
+.icases-div{
+	padding: 20px 20px;
+}
+.icases-div h2:nth-child(2)
+{
+	color: #707070;
+}
+
+.india-cases
+{
+	font-size: 55px !important;
+	/* width: 100%; */
+}
+
+.country-wise
+{
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 510px;
+	overflow-y: hidden;
+	
+}
+.country-wise table{
+	margin-top: 40px;
+	border-collapse: separate;
+	border-spacing: 3px 5px;
+}
+.country-wise table th , .country-wise table td
+{
+
+	padding: 5px 35px;
+	border-radius: 8px;
+	text-align: center;
+
+}
+
+.country-wise h2
+{
+	font-size: 45px !important;
+}
+
+.country-wise table th
+{
+	font-size: 25px;
+	font-weight: 800;
+	margin-bottom: 20px !important;
+	background: #eee;
+
+}
+
+.country-wise table
+{
+	border-spacing: 1px 5px;
+}
+.country-wise table tr:nth-child(even)
+{
+	background: #eee;
+}
+.country-wise table th:nth-child(3)
+{
+	color: #398ad7;
+}
+.country-wise table th:nth-child(4)
+{
+	color:#dab600;
+}
+.country-wise table th:nth-child(5)
+{
+	color: #33db98;
+}
+.country-wise table th:nth-child(6)
+{
+	color: #ff5252;
+}
+
+.toggle{
+	border-radius: 8px;
+	border: none;
+	background: none;
+	margin-top: 20px;
+	font-size: 30px;
+	background: #f0f0f0;
+	cursor: pointer;
+	outline: none;
+	display: block;
+	width: 150px;
+	padding: 5px 10px;
+	margin-left: 1100px;
+
+}
+
+.toggle:hover{
+	font-size: 31px;
+	background: #ccc
+	;
+}
+
+
+
+/*This is the media queriess     ......................................*/
+
+
+@media(max-width: 640px)
+{
+	.country-wise h2
+	{
+		font-size: 30px !important;
+	}
+	.country-wise table th , .country-wise table td
+	{
+
+		padding: 5px 1px;
+		border-radius: 8px;
+		text-align: center;
+
+	}
+
+	.country-wise table th
+	{
+		font-size: 15px;
+	}
+	.country-wise table td
+	{
+		font-size: 14px;
+	}
+
+	.india-heading
+	{
+		font-size: 30px;
+	}
+
+	nav{
+		padding: 5px 5px;
+		justify-content: space-around;
+		width: 473px;
+	}
+	nav h1{
+		font-size: 30px;
+		display: block;
+		width: 150px;
+		/* margin-left: -155px; */
+	}
+
+
+	.scroll-button{
+		font-size: 13px;
+		width: 110px;
+		margin: 0px;
+		padding: 0px;
+	}
+		.scroll-button:hover{
+			font-size: 13.5px;
+		}
+	.scroll-button1{
+		width: 60px;
+	}
+
+	.image{
+		display: none;
+	}
+
+	.toggle{
+		margin-left: 300px;
+		margin-top: 5px;
+	}
+}
